@@ -24,7 +24,6 @@ object Frm_Principal: TFrm_Principal
     Height = 86
     Align = alTop
     TabOrder = 0
-    ExplicitWidth = 564
     object lbCodCliente: TLabel
       Left = 16
       Top = 8
@@ -113,8 +112,6 @@ object Frm_Principal: TFrm_Principal
     Height = 336
     Align = alClient
     TabOrder = 1
-    ExplicitWidth = 564
-    ExplicitHeight = 373
     object Panel2: TPanel
       Left = 1
       Top = 137
@@ -122,8 +119,6 @@ object Frm_Principal: TFrm_Principal
       Height = 198
       Align = alBottom
       TabOrder = 2
-      ExplicitTop = 174
-      ExplicitWidth = 562
       object dbgItensPedido: TDBGrid
         Left = 1
         Top = 1
@@ -208,7 +203,6 @@ object Frm_Principal: TFrm_Principal
       Height = 54
       Align = alBottom
       TabOrder = 0
-      ExplicitWidth = 562
       object Label4: TLabel
         Left = 177
         Top = 5
@@ -249,7 +243,6 @@ object Frm_Principal: TFrm_Principal
       Height = 83
       Align = alBottom
       TabOrder = 1
-      ExplicitWidth = 562
       object Label8: TLabel
         Left = 11
         Top = 9
@@ -350,8 +343,6 @@ object Frm_Principal: TFrm_Principal
     Height = 62
     Align = alBottom
     TabOrder = 2
-    ExplicitTop = 459
-    ExplicitWidth = 564
     object btExcluirPedido: TButton
       Left = 322
       Top = 5
@@ -397,8 +388,6 @@ object Frm_Principal: TFrm_Principal
     Height = 22
     Align = alBottom
     TabOrder = 3
-    ExplicitTop = 521
-    ExplicitWidth = 564
     object Label6: TLabel
       Left = 211
       Top = 3

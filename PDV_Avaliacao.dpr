@@ -1,4 +1,4 @@
-program PDV_Simples;
+program PDV_Avaliacao;
 
 uses
   Vcl.Forms,
