@@ -1,5 +1,6 @@
 object DM: TDM
   OldCreateOrder = False
+  OnCreate = DataModuleCreate
   Height = 281
   Width = 327
   object fdCon: TFDConnection
@@ -10,7 +11,6 @@ object DM: TDM
       'Server=localhost'
       'DriverID=MySQL')
     LoginPrompt = False
-    AfterConnect = fdConAfterConnect
     Left = 136
     Top = 16
   end

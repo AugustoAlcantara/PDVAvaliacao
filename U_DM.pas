@@ -28,7 +28,7 @@ type
     QyPesqPeddataemissao: TDateTimeField;
     QyPesqPedcodcliente: TIntegerField;
     QyPesqPedvalortotal: TSingleField;
-    procedure fdConAfterConnect(Sender: TObject);
+    procedure DataModuleCreate(Sender: TObject);
   private
 
     { Private declarations }
@@ -51,11 +51,6 @@ implementation
 
 { TDM }
 
-procedure TDM.fdConAfterConnect(Sender: TObject);
-begin
-//
-end;
-
 function TDM.CriarQuery(Conexao: TFDConnection; Sql: string): TFDQuery;
 begin
   Result            := TFDQuery.Create(Self);
@@ -72,6 +67,16 @@ begin
   Result.ResourceOptions.AutoReconnect := True;
   Result.LoginPrompt                   := False;
   Result.Connected                     := True;
+end;
+
+procedure TDM.DataModuleCreate(Sender: TObject);
+begin
+  FDPhysMySQLDriverLink1.VendorLib     := GetCurrentDir+'\libmysql.dll';
+  fdCon.Params.Database:='pdv_simples';
+  fdCon.Params.UserName:='root';
+  fdCon.Params.Password:='admin';
+  fdCon.Params.DriverID:='MySQL';
+//fdCon.Params.Server=localhost
 end;
 
 procedure TDM.DestruirConexao(var Conexao: TFDConnection);

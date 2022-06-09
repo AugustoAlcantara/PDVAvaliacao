@@ -1,3 +1,4 @@
+IMPORTANTE COPIAR A DLL libmysql.dll PARA A PASTA DO .EXE
 ================================
 Connection definition parameters
 ================================
