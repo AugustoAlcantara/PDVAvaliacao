@@ -138,6 +138,7 @@ object Frm_Principal: TFrm_Principal
           item
             Expanded = False
             FieldName = 'IdPedido'
+            ReadOnly = True
             Title.Alignment = taCenter
             Visible = False
           end
@@ -162,12 +163,14 @@ object Frm_Principal: TFrm_Principal
           item
             Expanded = False
             FieldName = 'Quantidade'
+            ReadOnly = True
             Title.Alignment = taCenter
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'VlrUnitario'
+            ReadOnly = True
             Title.Alignment = taCenter
             Title.Caption = 'Valor Unit'#225'rio'
             Visible = True
@@ -175,6 +178,7 @@ object Frm_Principal: TFrm_Principal
           item
             Expanded = False
             FieldName = 'VlrTotal'
+            ReadOnly = True
             Title.Alignment = taCenter
             Title.Caption = 'Valor Total'
             Width = 71

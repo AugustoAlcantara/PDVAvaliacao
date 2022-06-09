@@ -124,12 +124,18 @@ end;
 
 procedure TFrm_Principal.ConfirmarSelecaoCliente;
 begin
+  if edCodCliente.Text = '' then
+  begin
+    edCodCliente.SetFocus;
+    Exit;
+  end;
   if Application.MessageBox('Confirma a seleção do cliente para o pedido?','Confirmação',
                             mb_YesNo+MB_ICONQUESTION+MB_DEFBUTTON1) = IDYES then
   begin
     // Gera o numero do pedido incrementando o sequencial no formato aammdd0000
     edNumPedido.Text   := TPedido.GerarNumero;
     dtDataEmi.Date     := Date;
+    if CDSItem.State IN [dsInactive] then
     CDSItem.CreateDataSet;
    
     PedidoEmInclusaoEdicao(True);
@@ -643,7 +649,7 @@ procedure TFrm_Principal.FormShow(Sender: TObject);
 begin
   PedidoEmInclusaoEdicao(False);
   btNovoPedido.Visible:= False;
-  btConfCli.Enabled   := False;
+  btConfCli.Enabled   := True;
   PedEdicao           := False;
 end;
 
