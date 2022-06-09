@@ -1,0 +1,34 @@
+================================
+Connection definition parameters
+================================
+Database=pdv_simples
+User_Name=root
+Password=admin
+Server=localhost
+DriverID=MySQL
+================================
+FireDAC info
+================================
+Tool = RAD Studio 10.4
+FireDAC = 27.0.0 (Build 99682)
+Platform = Windows 32 bit
+Defines = FireDAC_NOLOCALE_META;FireDAC_MONITOR
+================================
+Client info
+================================
+Loading driver MySQL ...
+DLL = ...\PDVAvaliacao-main\libmysql.dll
+Client version = 507290000
+================================
+Session info
+================================
+Checking session ...
+  Warning: The client [5.7.29.0.0] and server [8.0.29.0.0] major versions difference > 1.
+Current catalog = 
+Current schema = 
+Server info = 8.0.29
+Client info = 5.7.29
+Characterset name = latin1
+Host info = localhost via TCP/IP
+Name modes = CILCTD
+SSL Cipher = ECDHE-RSA-AES128-GCM-SHA256
